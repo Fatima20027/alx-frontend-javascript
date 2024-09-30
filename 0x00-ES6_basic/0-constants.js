@@ -13,3 +13,5 @@ function taskNext() {
 
   return componation;
 }
+
+console.log(`${taskFirst()} ${taskNext()}`);
