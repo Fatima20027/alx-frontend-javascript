@@ -3,15 +3,13 @@ export default function taskFirst() {
   return task;
 }
 
-function getLast() {
+export function getLast() {
   return ' is okay';
 }
 
-function taskNext() {
+export function taskNext() {
   let componation = 'But sometimes let';
   componation += getLast();
 
   return componation;
 }
-
-console.log(`${taskFirst()} ${taskNext()}`);
