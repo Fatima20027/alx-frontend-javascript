@@ -1,4 +1,4 @@
-function getResponseFromAPI() {
+export default function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
     const responseAPI = true;
     if (responseAPI) {
@@ -8,6 +8,3 @@ function getResponseFromAPI() {
     }
   });
 }
-
-const response = getResponseFromAPI();
-console.log(response instanceof Promise);
