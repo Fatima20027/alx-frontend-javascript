@@ -9,7 +9,3 @@ export default function signUpUser(firstName, lastName) {
     });
   });
 }
-
-signUpUser()
-  .then((value) => { console.log(value); })
-  .catch((error) => console.error(error));
