@@ -33,8 +33,12 @@ class Pricing {
   }
 
   static convertPrice(amount, conversionRate) {
-    if (typeof amount !== 'number' || typeof conversionRate !== 'number') {
-      throw new TypeError('Amount and conversion rate must be numbers');
+    if (typeof amount !== 'number') {
+      throw new TypeError('Amount must be numbers');
+    }
+
+    if (typeof conversionRate !== 'number') {
+      throw new TypeError('ConversionRate must be numbers');
     }
     return amount * conversionRate;
   }
