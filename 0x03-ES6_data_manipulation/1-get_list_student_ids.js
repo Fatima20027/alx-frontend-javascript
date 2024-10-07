@@ -7,13 +7,10 @@ export default function getListStudents() {
   return arr;
 }
 
-function getListStudentIds(arr) {
+export function getListStudentIds(arr) {
   if (!Array.isArray(arr)) {
     return [];
   }
 
   return arr.map((arr) => arr.id);
 }
-
-console.log(getListStudentIds('hello'));
-console.log(getListStudentIds(getListStudents()));
