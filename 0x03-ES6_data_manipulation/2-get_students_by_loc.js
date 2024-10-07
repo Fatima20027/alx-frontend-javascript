@@ -7,10 +7,10 @@ export default function getListStudents() {
   return arr;
 }
 
-export function getListStudentIds(arr) {
-  if (!Array.isArray(arr)) {
-    return [];
-  }
-
-  return arr.map((students) => students.id);
+export function getStudentsByLocation(arr, city) {
+  return arr.filter((students) => students.location === city);
 }
+
+const students = getListStudents();
+
+console.log(getStudentsByLocation(students, 'San Francisco'));
